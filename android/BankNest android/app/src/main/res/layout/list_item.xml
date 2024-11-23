@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_box"
+    android:backgroundTint="?attr/android:windowBackground"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="37dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center|right"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Icon"
+        android:src="@drawable/baseline_delete_24" />
+
+    <TextView
+        android:id="@+id/bankNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_gray"
+        android:padding="10dp"
+        android:text="Bank Name"
+        android:textColor="?attr/android:textColor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/yearTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_gray"
+        android:padding="10dp"
+        android:text="Year"
+        android:textColor="?attr/android:textColor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_gray"
+        android:padding="10dp"
+        android:text="Amount"
+        android:textColor="?attr/android:textColor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/percentageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_gray"
+        android:padding="10dp"
+        android:text="Percentage"
+        android:textColor="?attr/android:textColor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/finalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Final Amount:"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_gray"
+        android:textColor="?attr/android:textColor"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/amountToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_gray"
+        android:padding="10dp"
+        android:textColor="?attr/android:textColor"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="Amount After Unknown Date"
+        android:textColor="?attr/colorPrimary" />
+    <TextView
+        android:id="@+id/selectedAmountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_gray"
+        android:padding="10dp"
+        android:textColor="?attr/android:textColor"
+        android:textSize="18sp"
+        android:visibility="gone" />
+</LinearLayout>

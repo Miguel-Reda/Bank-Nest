@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:backgroundTint="?attr/colorPrimary"
+    tools:context=".form">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adding New Account Form"
+        android:textColor="?attr/android:textColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_box"
+        android:backgroundTint="?attr/android:windowBackground"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/bankName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_gray"
+            android:ems="10"
+            android:hint="Bank Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="?attr/android:textColor"
+            android:textColorHint="#B0B0B0" />
+
+        <EditText
+            android:id="@+id/startDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_gray"
+            android:ems="10"
+            android:hint="Start Date (dd/mm/yyyy)"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="?attr/android:textColor"
+            android:textColorHint="#B0B0B0" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_gray"
+            android:ems="10"
+            android:hint="Amount"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="?attr/android:textColor"
+            android:textColorHint="#B0B0B0" />
+
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_gray"
+            android:ems="10"
+            android:hint="Number Of Years"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="?attr/android:textColor"
+            android:textColorHint="#B0B0B0" />
+
+        <EditText
+            android:id="@+id/percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_gray"
+            android:ems="10"
+            android:hint="Percentage"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="?attr/android:textColor"
+            android:textColorHint="#B0B0B0" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:insetTop="8dp"
+            android:insetBottom="8dp"
+            android:onClick="addAccount"
+            android:text="Add"
+            android:textColor="?attr/colorPrimary" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="104dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="35dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="363dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="540dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
