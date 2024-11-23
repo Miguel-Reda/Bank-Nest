@@ -1,6 +1,4 @@
-# Android graduation project
- 
-# BankNest - Bank Tracking Application
+ # BankNest - Bank Tracking Application
 
 ## Overview
 
